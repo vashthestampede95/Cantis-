@@ -46,7 +46,7 @@ instance HasLogging AppM where
 instance HasUDPSocket AppM where
   getUDPSocket = udpSocket <$> getEnv
 
-runAppM :: AriviEnv -> AppM a -> LoggingT IO a
+runAppM :: CantisEnv -> AppM a -> LoggingT IO a
 runAppM = flip runReaderT
 
 
