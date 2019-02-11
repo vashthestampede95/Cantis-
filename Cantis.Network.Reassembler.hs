@@ -11,7 +11,7 @@ import           Cantis.Network.Connection           (CompleteConnection,
                                                      sharedSecret)
 
 
-import           Arivi.Network.Types                (Header (..), MessageId,
+import           Cantis.Network.Types                (Header (..), MessageId,
                                                      Parcel (..), Payload (..),
                                                      serialise)
 import qualified Data.ByteString.Lazy               as Lazy (ByteString, concat,
