@@ -7,10 +7,10 @@ module Cantis.Env
 
 import qualified Crypto.PubKey.Ed25519 as Ed25519
 
-data AriviEnv = AriviEnv
-    { ariviEnvCryptoEnv :: CryptoEnv
-    , ariviEnvTcpPort   :: Int -- ^ TCP port for new connections
-    , ariviEnvUdpPort   :: Int -- ^ UDP port for new connections
+data CantisEnv = AriviEnv
+    { cantisEnvCryptoEnv :: CryptoEnv
+    , cantisEnvTcpPort   :: Int -- ^ TCP port for new connections
+    , cantisEnvUdpPort   :: Int -- ^ UDP port for new connections
     }
 
 data CryptoEnv = CryptoEnv
