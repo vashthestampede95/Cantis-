@@ -4,7 +4,7 @@ module Cantis.Network.StreamClient
     , createFrame
     ) where
 
-import           Arivi.Network.Types            (TransportType (..))
+import           Cantis.Network.Types            (TransportType (..))
 
 import           Control.Concurrent.MVar
 import           Control.Monad                  (when)
