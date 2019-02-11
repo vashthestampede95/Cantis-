@@ -35,13 +35,13 @@ mkAriviEnv tcpPort udpPort sk =
         , ariviEnvTcpPort = tcpPort
         , ariviEnvUdpPort = udpPort
         }
--- makeLensesWith camelCaseFields ''AriviNetworkInstance
--- makeLensesWith camelCaseFields ''AriviEnv
+-- makeLensesWith camelCaseFields ''CantisNetworkInstance
+-- makeLensesWith camelCaseFields ''CantisEnv
 -- makeLensesWith camelCaseFields ''CryptoEnv
--- instance Has AriviNetworkInstance AriviEnv where
+-- instance Has CantisNetworkInstance CantisEnv where
 --     get = networkInstance
--- instance Has SecretKey AriviEnv where
+-- instance Has SecretKey CantisEnv where
 --     get = cryptoEnv . secretKey
--- instance Has Socket AriviEnv where
+-- instance Has Socket CantisEnv where
 --    get = udpSocket
 --
